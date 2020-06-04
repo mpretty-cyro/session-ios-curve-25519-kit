@@ -4,8 +4,8 @@
 
 #import "Ed25519.h"
 #import "Curve25519.h"
-#import <SignalCoreKit/OWSAsserts.h>
-#import <SignalCoreKit/SCKExceptionWrapper.h>
+#import <SessionCoreKit/OWSAsserts.h>
+#import <SessionCoreKit/SCKExceptionWrapper.h>
 
 extern int curve25519_verify(const unsigned char *signature, /* 64 bytes */
     const unsigned char *curve25519_pubkey, /* 32 bytes */

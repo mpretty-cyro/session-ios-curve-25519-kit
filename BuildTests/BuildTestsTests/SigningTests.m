@@ -4,7 +4,7 @@
 
 #import "Curve25519.h"
 #import "Ed25519.h"
-#import <SignalCoreKit/Randomness.h>
+#import <SessionCoreKit/Randomness.h>
 #import <XCTest/XCTest.h>
 
 @interface SigningTests : XCTestCase
@@ -16,7 +16,7 @@
 - (void)setUp
 {
     [super setUp];
-    
+
 }
 
 - (void)tearDown
@@ -27,9 +27,9 @@
 - (void)testingRandom{
     for (int i = 1; i < 1000; i++) {
         for (int j = 0; j < 3; j++) {
-            
+
             ECKeyPair *key = [Curve25519 generateKeyPair];
-            
+
             NSData *data = [Randomness generateRandomBytes:i];
 
             NSData *signature = [Ed25519 throws_sign:data withKeyPair:key];
@@ -44,9 +44,9 @@
 
 - (void)testingIdentityKeyStyle{
     for (int i = 0; i < 10000; i++) {
-        
+
         ECKeyPair *key = [Curve25519 generateKeyPair];
-        
+
         NSData *data = [Randomness generateRandomBytes:32];
 
         NSData *signature = [Ed25519 throws_sign:data withKeyPair:key];

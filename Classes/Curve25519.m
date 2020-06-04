@@ -3,9 +3,9 @@
 //
 
 #import "Curve25519.h"
-#import <SignalCoreKit/OWSAsserts.h>
-#import <SignalCoreKit/Randomness.h>
-#import <SignalCoreKit/SCKExceptionWrapper.h>
+#import <SessionCoreKit/OWSAsserts.h>
+#import <SessionCoreKit/Randomness.h>
+#import <SessionCoreKit/SCKExceptionWrapper.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
