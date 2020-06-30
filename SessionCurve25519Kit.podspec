@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'SessionCurve25519Kit'
-  spec.version      = '2.1.2'
+  spec.version      = '2.1.3'
   spec.license      = { :type => 'GPLv3' }
   spec.homepage     = 'https://github.com/loki-project/session-ios-curve-25519-kit'
   spec.preserve_path = 'Sources/ed25519/**/*.{c,h}'
