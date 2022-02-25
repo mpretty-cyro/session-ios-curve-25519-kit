@@ -68,7 +68,7 @@ int curve25519_sign(unsigned char* signature_out,
 }
 
 void ed25519_pubkey(unsigned char* ed25519_pubkey_out,
-                   const unsigned char* curve25519_pubkey)
+                    const unsigned char* curve25519_pubkey)
 {
   fe mont_x, mont_x_minus_one, mont_x_plus_one, inv_mont_x_plus_one;
   fe one;
